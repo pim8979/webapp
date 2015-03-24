@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		* {
+			margin:0px;
+			padding:0px;
+		}
+		#container {
+			position:relative;
+			height:460px;
+			width:300px;
+			border:3px solid red; <!-- solid는 선 -->
+		}
+		#pic1 {
+			position:absolute;
+			left:38px;
+			top:13px;
+		}
+		#pic2 {
+			background-image:url(ball.png);
+			background-repeat:no-repeat;
+			position:absolute;
+			height:181px;
+			width:156px;
+			left:83px;
+			top:169px;
+		}
+		p {
+			position:absolute;
+			font-family:"Times New Roman", Times, serif;
+			font-size:16px;
+			font-style:italic;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img id="pic1" src="book.png" alt="book" />
+		<p id="title">Presentation</p>
+		
+		<div id="pic2">
+		<p id="title2">Presentation</p>
+		</div>
+	</div>
+</body>
+</html>
