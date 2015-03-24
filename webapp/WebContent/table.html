@@ -5,7 +5,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table border="1">
+	<table border="1"> <!-- 0으로 하면 줄이 없어짐 -->
+		<caption> <!-- 표 제목 -->
+			최근에 본 영화들
+		</caption>
 		<tr>
 			<th>영화제목</th>
 			<th>연도</th>
@@ -13,16 +16,16 @@
 			<th>평점</th>
 		</tr>
 		<tr>
-			<td>매트릭스</td>
+			<td rowspan="2">매트릭스</td> <!-- 열 병합 -->
 			<td>1999</td>
 			<td>이안</td>
 			<td>8.5</td>
 		</tr>
 		<tr>
-			<td>매트릭스2</td>
-			<td>2003</td>
-			<td>이안</td>
-			<td>7.9</td>
+			<!--<td>매트릭스2</td>-->
+			<td colspan="3">2003</td> <!-- 행 병합 -->
+			<!--<td>이안</td>
+			<td>7.9</td>-->
 		</tr>
 	</table>
 </body>
